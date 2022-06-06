@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    ;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    ;
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: 85px;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(rgb(255, 254, 254), rgb(245, 121, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+#searchDiv {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    width: 100vw;
+
+
+}
+
+#searchDiv input {
+    background: #abbaab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    letter-spacing: 1.5px;
+
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 35px;
+    caret-color: #302b63;
+}
+
+#searchDiv button {
+    width: 350px;
+    height: 50px;
+    background: #009FFF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    letter-spacing: 2.5px;
+
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+    transition: all 0.75s;
+    font-size: 25px;
+    font-weight: 500px;
+    border-radius: 15px;
+    border: none;
+}
+
+
+#searchDiv button:hover {
+    background: #009FFF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+
+
+    color: white;
+    box-shadow: 0 0 20px #009FFF,
+        0 0 25px #009FFF,
+        0 0 50px #ec2F4B,
+        0 0 200px #ec2F4B;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    cursor: pointer;
+}
+
+#msg
+{
+    color: white;
+    font-size: 15px;
+    margin: 15px;
+    margin-right: 650px
+}
+#citys
+{
+    width: 100vw;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#citysList
+{
+    width: 1100px;
+    min-height: 350px;
+    justify-content: center;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    transition: all 0.75s;
+    
+}
+.city
+{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    margin: 25px;
+    border-radius: 15px;
+    list-style: none;
+    background: #c0392b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    transition: all 0.75s;
+
+}
+.city:hover
+{
+    box-shadow: 0 0 20px #009FFF,
+    0 0 25px #009FFF,
+    0 0 50px #ec2F4B,
+    0 0 200px #ec2F4B;
+}
+.weather
+{
+    padding-top: 20px;
+    padding-right: 80px;
+    letter-spacing: 1.5px;
+    width:350px;
+    height:350px;
+    display: grid;
+    grid-template-rows: 50px 150px 100px ;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.weathericon
+{
+    text-align: center;
+
+}
+#weatherText
+{
+    margin-top: -10px;
+  
+}
+#realTemp
+{
+    font-size: 100px;
+    
+}
+#temps
+{
+    display: grid;
+    grid-template-columns: 150px 100px;
+}
+.temp
+{
+    display: grid;
+}
